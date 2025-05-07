@@ -126,6 +126,7 @@ Supporting documentation:
 If using this dataset, please cite:
 
 > Ghoreishi, B., Staes, B.M., Liu, C., Wang, H. (2025). *Mapping Climate Extremes and Infrastructure Vulnerability: A New Database for U.S. Railroads*. Nature Scientific Data. (Under Review)
+> DOI: [10.5281/zenodo.15360640](https://doi.org/10.5281/zenodo.15360640)
 
 Data Sources:
 - NOAA/NCEI
