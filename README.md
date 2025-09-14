@@ -1,6 +1,65 @@
-# Railroad Hazard Database
+# 🚆 Railroad Hazard Database 🌍
+**Mapping Climate Extremes and Infrastructure Vulnerability: A New Database for U.S. Railroads**
 
-This repository contains datasets, processing scripts, and metadata developed for the study **"Mapping Climate Extremes and Infrastructure Vulnerability: A New Database for U.S. Railroads"**, focusing on natural hazards such as flooding, extreme heat, and landslides.
+# 📑 Table of Contents
+
+1. [Overview](#-overview)  
+2. [Motivation](#-motivation)  
+3. [Key Contributions](#-key-contributions)  
+4. [Data Sources](#-data-sources)  
+5. [Methodology](#-methodology)  
+6. [Folder Structure](#-folder-structure)  
+   - [Raw Data (`/data/raw/`)](#-raw-data-dataraw)  
+   - [Processed Data (`/data/processed/`)](#-processed-data-dataprocessed)  
+   - [Scripts (`/scripts/`)](#-scripts-scripts)  
+   - [Metadata (`/metadata/`)](#-metadata-metadata)  
+7. [About the Data](#-about-the-data)  
+8. [How to Use](#-how-to-use)  
+9. [Citation and Acknowledgements](#-citation-and-acknowledgements)  
+10. [Contact](#-contact)  
+
+## 📌 Overview  
+This repository curates **natural hazard datasets** and **geospatial analysis workflows** to evaluate how **flooding, extreme heat, and landslides** affect **U.S. railroad infrastructure**.  
+
+It provides a **first-of-its-kind national database** linking natural hazard events with railroad exposure, accident records, and spatial verification.  
+
+---
+
+## 🎯 Motivation  
+Natural hazards—flash floods, riverine floods, extreme heat (sun kinks), and landslides—pose growing risks to U.S. railroads. While derailment datasets exist, a comprehensive hazard-to-rail mapping system has been missing.  
+
+This repository bridges that gap by:  
+- Integrating datasets from **FRA, NCEI, USGS, NWS, and HUC**.  
+- Building geospatial workflows to assign hazards to rail corridors.  
+- Providing **verification against FRA accident records**.  
+
+---
+
+## 🚀 Key Contributions  
+✅ **Nationwide hazard–railroad database** (2000–2024)  
+✅ **Analysis of flooding, extreme heat, and landslides** on U.S. rail segments  
+✅ **Advanced GIS mapping & assignments** using HUC12, NWS forecast zones, and buffers/splits  
+✅ **Verification framework** cross-referencing FRA derailments with hazard events  
+
+---
+
+## 📂 Data Sources  
+- 🛤 **Federal Railroad Administration (FRA)** – Rail accidents/incidents (Form 54)  
+- 🌊 **NOAA/NCEI** – Flash floods, riverine floods, heat, and excessive heat events  
+- 🏔 **USGS** – Landslide points and polygons (2000–2024) + High Water Marks (HWM)  
+- 🌎 **Hydrologic Unit Code (HUC2–HUC12)** – Flood-prone watershed mapping  
+- 🔥 **National Weather Service (NWS)** – Forecast zones for heat mapping  
+
+---
+
+## 🔍 Methodology  
+1️⃣ **Data Collection & Preprocessing** – Harmonizing FRA, NCEI, USGS, and HUC datasets  
+2️⃣ **Hazard Assignment** – Linking hazards to rail corridors:  
+   - Floods → HUC12 → Rail  
+   - Heat → NWS forecast zones → Rail  
+   - Landslides → Buffers & polygon splits → Rail  
+3️⃣ **Verification** – Cross-referencing hazard-exposed segments with FRA accidents  
+4️⃣ **Visualization** – GIS-based hazard exposure and hotspot mapping
 
 ---
 
